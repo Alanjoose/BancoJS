@@ -40,7 +40,7 @@ var datalimit = [31122021];
 //Variaveis globais;
 
 function imprimirMenu(){
-	console.log('\n~~~~~~~~JS Bank~~~~~~~~\n');
+	console.log('\n|****~~~~~~~~JS Bank~~~~~~~~****|\n');
 	console.log('(1) Cadastro de Usuario.');
 	console.log('(2) Busca de Usuario.');
 	console.log('(3) Deposito');
@@ -52,7 +52,7 @@ function imprimirMenu(){
 	console.log('(9) Alterar dica de Senha.');
 	console.log('(10) Sobre.');
 	console.log('\n(0) Sair.\n');
-	console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~');
+	console.log('|****~~~~~~~~~~~~~~~~~~~~~~~~~~****|');
 }
 //Imprime o menu principal;
 
@@ -128,7 +128,7 @@ function userSearch(){
 function deposito(){
 	let sa = Number(prompt("Quanto deseja depositar ?:"))
 	contA.Saldo = contA.Saldo + sa;
-	console.log('Adicionada a quantia de :', sa, 'a sua conta.');
+	console.log('Adicionada a quantia de :', sa, 'Reais a sua conta.');
 }
 //Adiciona valor ao saldo da conta;
 
@@ -136,7 +136,7 @@ function Saque(){
 	let de = Number(prompt("Quanto deseja Sacar ?:"))
 	if (de < contA.Saldo){
 	contA.Saldo = contA.Saldo - de;
-	console.log(de, 'Retirado(s) de sua conta.')
+	console.log(de, ' Reais Retirado(s) de sua conta.')
 }
 else {
 	console.log("\nValor de Saque superior ao Saldo. Operacao nao concluida...\n")
@@ -145,7 +145,7 @@ else {
 //Retira valor do saldo;
 
 function Saldow(){
-	console.log('Seu saldo eh de :', contA.Saldo);
+	console.log('Seu saldo eh de :', contA.Saldo, 'Reais.');
 }
 //Retorna o saldo presente na conta;
 
